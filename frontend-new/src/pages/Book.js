@@ -1,10 +1,12 @@
 import React from "react";
-import { DateRangePicker } from 'rsuite';
+import { DateRangePicker, Navbar } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
 import './css/Book.css'
 import axios from "axios";
 import { Navigate } from 'react-router-dom';
-const { allowedMaxDays, allowedDays, allowedRange, beforeToday, afterToday, combine } =DateRangePicker;
+import NavBar from "../components/Navbar";
+
+const {beforeToday} =DateRangePicker;
 
 
 export default class Book extends React.Component 
@@ -100,6 +102,7 @@ export default class Book extends React.Component
     render(){
         return(
           <>
+          <NavBar />
           <div className="mcontainer">
 
           <div className="ss_logo" onClick={this.setRedirectHome} > <i className="fa fa-home"></i></div>

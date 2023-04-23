@@ -42,7 +42,7 @@ export default class LoginBox extends React.Component
     {
       if (this.state.redirect) 
       {
-        return <Navigate to='/book' /> //DEBUG
+        return <Navigate to='/' /> //DEBUG
       } 
       if (this.state.redirect2) 
       {
@@ -97,9 +97,7 @@ export default class LoginBox extends React.Component
     
     setRedirectSignup()
     {
-      this.setState({
-        redirect: true
-      })
+      window.location.reload();
     }
 
 
@@ -116,13 +114,13 @@ export default class LoginBox extends React.Component
 
      <div className="login_box">
          <div className="left">
-             <div className="top_link"><a onClick={this.setRedirectSignup}><img
-                         src={require("../assets/imgs/icons/return-274.png")}/>Return
-                         home</a> </div> <div className="contact">
+             <div className="top_link"><a onClick={this.setRedirectSignup}><img src={require("../assets/imgs/icons/1544641784.png")}/></a> </div> <div className="contact">
+                          
                      <form action="" onSubmit={this.handleSubmit}>
                          <h3>SIGN IN</h3>
                          <input type="text" name="email" placeholder="email" onChange={this.handleInputChange} />
-                         <input type="password" name="password" placeholder="password"onChange={this.handleInputChange}  />
+
+                         <input className="pswd" type="password" name="password" placeholder="password"onChange={this.handleInputChange}  />
                          <button type="submit" className="submit" value="Submit">Sign In</button>
                      </form>
 
