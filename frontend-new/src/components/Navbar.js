@@ -44,24 +44,45 @@ function NavBar() {
     return ( 
 
             <header className='navBar'>
-            <a href='/'><h1>LOGO</h1></a>
+            <a href='/' className='sand'><div className='sandwitch'></div>
+            <div className='sandwitch'></div>
+            <div className='sandwitch'></div></a>
+
             <nav>
                 <ul>
-                    <li>
+                    <li className='text'>
                         <a href="/" target="_blank">Home</a>
                     </li>
-                    <li>
+
+                    <li className='text'>
                         <a href="#about" target="_blank">About Us</a>
                     </li>
-                    <li>
+                    <li className='text'>
                         <a href="/book" target="_blank">Book</a>
                     </li>
+                    
+                    <li className='divider'></li>
                     <li>
-                        <a href="/rooms" target="_blank">Rooms</a>
+                        <a href="#" class="fa fa-facebook"></a>
                     </li>
                     <li>
+                        <a href="#" class="fa fa-instagram special"></a>
+                    </li>
+
+                    {/* <li className='text special'>
                         <a href="/rooms" target="_blank">Rooms</a>
                     </li>
+                     */}
+                    <li>
+                        <div class="back">
+                            <div class="button_base b03_skewed_slide_in">
+                                <div>Booking</div>
+                                <div></div>
+                                <div>Booking</div>
+                            </div>
+                        </div>
+                </li>
+
                     {/* <li>
                         <a href="contact.html" target="_blank">Contact Us</a>
                     </li> */}
@@ -81,7 +102,7 @@ function NavBar() {
                             <li><a href="service.html" target="_blank">Service 3</a></li>
                         </ul>
                     </li> */}
-                    <li class="dropDown-menu">
+                    {/* <li class="dropDown-menu text" >
                         <a href="product.html" target="_blank">Products</a>
                         <ul>
                             <li class="dropDown-menu left">
@@ -102,7 +123,7 @@ function NavBar() {
                             <li><a href="service.html" target="_blank">Products 2</a></li>
                             <li><a href="service.html" target="_blank">Products 3</a></li>
                         </ul>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
         </header>
